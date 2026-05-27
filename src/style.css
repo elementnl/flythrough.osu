@@ -347,7 +347,11 @@ html, body {
     margin: -.6rem auto 1.4rem;
   }
 
-  .brand { margin-bottom: 1.2rem; }
+  .brand {
+    margin-bottom: 1.2rem;
+    font-size: clamp(1.6rem, 8vw, 2.4rem);
+    letter-spacing: .1em;
+  }
 
   .bar-track { margin-bottom: .9rem; }
 
