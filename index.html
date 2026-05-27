@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>flythrough.osu</title>
+  <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+
+  <div id="loading">
+    <div class="loading-content">
+      <h1 class="brand">flythrough<span>.osu</span></h1>
+      <p id="tagline">A 3D star map of every OSU course — fly through the galaxy, hover to identify stars, open them for live enrollment data.</p>
+      <div class="bar-track"><div id="bar"></div></div>
+      <p id="loading-msg">Loading course data…</p>
+    </div>
+  </div>
+
+  <canvas id="canvas"></canvas>
+
+  <div id="hud">
+    <div id="search-wrap">
+      <input id="search" type="text" placeholder="Search: CSE 2221, MATH 1151…"
+             autocomplete="off" spellcheck="false" />
+      <ul id="results"></ul>
+    </div>
+  </div>
+
+  <div id="hint">click to capture mouse · then fly &amp; look freely</div>
+
+  <aside id="panel" aria-hidden="true">
+    <button id="panel-close" aria-label="Close">×</button>
+    <p id="p-code"></p>
+    <h2 id="p-title"></h2>
+    <div id="p-meta"></div>
+    <p id="p-desc"></p>
+    <div id="p-sections"></div>
+  </aside>
+
+  <div id="vignette"></div>
+  <div id="xhair">+</div>
+  <div id="star-label">press space to view</div>
+  <div id="esc-hint">press esc to show mouse</div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
