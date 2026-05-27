@@ -341,5 +341,15 @@ html, body {
     max-width: 80vw;
   }
 
-  #tagline { font-size: .76rem; padding: 0 1rem; }
+  #tagline {
+    font-size: .76rem;
+    padding: 0 1.5rem;
+    margin: -.6rem auto 1.4rem;
+  }
+
+  .brand { margin-bottom: 1.2rem; }
+
+  .bar-track { margin-bottom: .9rem; }
+
+  .loading-content { padding: 0 1rem; }
 }
